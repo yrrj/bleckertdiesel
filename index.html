@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bleckert Diesel Repair Inc.</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    
     <style>
         /* General Styles */
         body {
@@ -29,6 +33,7 @@
             letter-spacing: 2px;
             font-weight: bold;
             color: white;
+            font-family: 'Great Vibes', cursive; /* Applied the new font */
             /* Blue stroke effect using text-shadow */
             text-shadow: 
                 -1px -1px 0 #003366,  
@@ -41,9 +46,26 @@
                 2px 2px 0 #003366;
         }
 
+        .header h2 {
+            font-family: 'Bebas Neue', sans-serif; /* Applied the new font */
+            font-size: 2em; /* Adjusted font size */
+            margin: 0;
+            letter-spacing: 2px; /* Adjusted letter spacing */
+            font-style: italic; /* Made the font italic */
+            text-shadow: 
+                -1px -1px 0 #003366,  
+                1px -1px 0 #003366,
+                -1px 1px 0 #003366,
+                1px 1px 0 #003366,
+                -2px -2px 0 #003366,  
+                2px -2px 0 #003366,
+                -2px 2px 0 #003366,
+                2px 2px 0 #003366;
+        }
+
         .header p {
-            margin: 5px 0 0;
             font-size: 1em;
+            margin: 5px 0 0;
         }
 
         /* Navigation */
@@ -142,6 +164,22 @@
             border: 1px solid #ccc;
             box-sizing: border-box;
         }
+        
+        .contact-form button {
+            background-color: #003366;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1em;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #00509e;
+        }
 
         /* Footer */
         .footer {
@@ -157,7 +195,8 @@
 <body>
 
     <header class="header">
-        <h1>Bleckert Diesel Repair Inc.</h1>
+        <h1>Bleckert's</h1>
+        <h2>Diesel Repair</h2>
         <p>1430 Broadway, Anaheim, CA 92802 | Phone: (714) 533-0280 | Email: Bleckert_Diesel_Repair@outlook.com</p>
     </header>
 
@@ -174,13 +213,13 @@
             <div class="image-container">
                 <img src="./images/20250825123815_357.jpg" alt="A classic diesel truck">
             </div>
-            <p>Serving the Anaheim area for decades, Bleckert Diesel Repair Inc. is a trusted provider of diesel vehicle fault diagnosis, repair, and maintenance. Our company is known for reliable service, expert technicians, and a commitment to customer satisfaction. Conveniently located right beside the No. 5 freeway, we make it easy for customers to access quality diesel repair services.</p>
+            <p>Serving the Anaheim area for decades, Bleckert Diesel Repair Inc. is a trusted provider of diesel vehicle fault diagnosis, repair, and maintenance. Our company is known for reliable service, expert technicians, and a commitment to customer satisfaction. Conveniently located right beside the No.5 freeway, we make it easy for customers to access quality diesel repair services.</p>
         </section>
 
         <section id="services" class="section">
             <h2>Our Services</h2>
-            <div class="image-placeholder">
-                [Insert classic imagery of tools or a workshop scene here]
+            <div class="image-container">
+                <img src="./images/2025-08-25_160329_250.jpg" alt="A classic diesel truck">
             </div>
             <ul class="services-list">
                 <li>Diesel vehicle fault diagnosis</li>
@@ -199,30 +238,9 @@
             <p>Closed on weekends and major holidays</p>
 
             <h2>Contact Us</h2>
-            <p>For service inquiries or to schedule an appointment, please fill out the form below and email it to: **Bleckert_Diesel_Repair@outlook.com**</p>
+            <p>For service inquiries or to schedule an appointment, please email: Bleckert_Diesel_Repair@outlook.com</p>
             
-            <form class="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
-                
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone">
-
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email">
-
-                <label for="vehicle">Vehicle Make/Model/Year:</label>
-                <input type="text" id="vehicle" name="vehicle">
-
-                <label for="service">Service Needed:</label>
-                <textarea id="service" name="service"></textarea>
-                
-                <label for="datetime">Preferred Date/Time:</label>
-                <input type="text" id="datetime" name="datetime">
-
-                <label for="comments">Additional Comments:</label>
-                <textarea id="comments" name="comments"></textarea>
-            </form>
+           
         </section>
 
     </main>
